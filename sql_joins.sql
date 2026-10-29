@@ -52,7 +52,7 @@ limit 10;
 select i.inventory_id, f.title, i.store_id
 from film f
 join inventory i on f.film_id = i.film_id
-where f.title = 'academy dinosaur' and i.store_id = 1;
+where f.title = 'Academy Dinosaur' and i.store_id = 1;
 
 -- 8. Provide a list of all distinct film titles, along with their availability status in the inventory. Include a column indicating whether each title is 'Available' or 'NOT available.' Note that there are 42 titles that are not in the inventory, and this information can be obtained using a CASE statement combined with IFNULL.
 select f.title,
